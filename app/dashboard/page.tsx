@@ -131,7 +131,7 @@ export default function DashboardPage() {
         title="CPU Usage"
         description="Tracks real-time CPU utilization across all cores."
       >
-        <LineChart metricKey="cpu" color="#00e0ff" visiblePoints={2000} />
+        <LineChart metricKey="cpu" color="#00e0ff" visiblePoints={10000} />
       </MetricCard>
 
       {/* ✅ Memory Usage */}
@@ -139,7 +139,7 @@ export default function DashboardPage() {
         title="Memory Usage"
         description="Shows real-time RAM consumption (8GB – 16GB)."
       >
-        <AreaChart metricKey="memory" color="#00bfff" visiblePoints={2000} />
+        <AreaChart metricKey="memory" color="#00bfff" visiblePoints={10000} />
       </MetricCard>
 
       {/* ✅ Disk I/O */}
@@ -147,7 +147,7 @@ export default function DashboardPage() {
         title="Disk Activity"
         description="Read/write throughput over time (smoothed, real-time)."
       >
-        <DiskBarChart metricKey="disk" color="#f59e0b" visiblePoints={300} />
+        <DiskBarChart metricKey="disk" color="#f59e0b" visiblePoints={10000} />
       </MetricCard>
 
       {/* ✅ Network */}
