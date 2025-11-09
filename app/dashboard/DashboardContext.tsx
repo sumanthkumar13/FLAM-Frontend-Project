@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState } from "react";
 
 type TimeRange = "10s" | "1m" | "5m" | "1h";
-type Resolution = 300 | 1000 | 5000;
+type Resolution = 300 | 1000 | 10000;
 
 type DashboardState = {
   timeRange: TimeRange;
