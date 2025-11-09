@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 type TimeRange = "10s" | "1m" | "5m" | "1h";
-type Resolution = 300 | 1000 | 5000;
+type Resolution = 300 | 1000 | 10000;
 
 export type MetricsState = {
   cpu: boolean;
@@ -41,7 +41,7 @@ function timeRangeToPoints(range: TimeRange) {
 
 export function DashboardControlsProvider({ children }: { children: React.ReactNode }) {
   const [timeRange, setTimeRangeState] = useState<TimeRange>("10s");
-  const [resolution, setResolutionState] = useState<Resolution>(300);
+  const [resolution, setResolutionState] = useState<Resolution>(1000);
 
   const [metrics, setMetrics] = useState<MetricsState>({
     cpu: true,
