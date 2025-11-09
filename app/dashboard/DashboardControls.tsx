@@ -80,7 +80,7 @@ export default function DashboardControls() {
       <div style={{ marginBottom: 20 }}>
         <div className="section-title">📊 Resolution (points)</div>
         <div className="btn-group">
-          {[300, 1000, 5000].map((r) => (
+          {[300, 1000, 10000].map((r) => (
             <button
               key={r}
               className={`ctrl-btn ${resolution === r ? "active" : ""}`}
